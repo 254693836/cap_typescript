@@ -1,0 +1,31 @@
+{
+  "name": "cap-typescript-product-sample",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CAP TypeScript sample with a product maintenance UI",
+  "scripts": {
+    "start": "tsc && cds deploy --to sqlite:db.sqlite && cds-serve",
+    "watch": "tsc && cds watch --in-memory",
+    "build": "tsc && cds build --production",
+    "test": "tsc --noEmit && npm run build"
+  },
+  "dependencies": {
+    "@cap-js/sqlite": "^3.1.1",
+    "@sap/cds": "^10.1.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.20.0",
+    "@sap/cds-dk": "^10.1.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.3"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "impl": "@cap-js/sqlite"
+      }
+    }
+  }
+}

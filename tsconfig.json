@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "types": ["node", "@cap-js/cds-types"],
+    "rootDir": "./srv",
+    "outDir": "./srv/gen",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["srv/**/*.ts"]
+}

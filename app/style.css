@@ -1,0 +1,12 @@
+body { font-family: system-ui, sans-serif; margin: 2rem; color: #1d2d3e; }
+main { max-width: 1100px; margin: auto; }
+.layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: start; }
+table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+th, td { border-bottom: 1px solid #d8dde3; padding: .65rem; text-align: left; }
+label { display: block; margin: .75rem 0; }
+input, textarea { box-sizing: border-box; display: block; margin-top: .3rem; padding: .45rem; width: 100%; }
+textarea { min-height: 5rem; }
+.actions { display: flex; gap: .5rem; margin-top: 1rem; }
+button { cursor: pointer; padding: .45rem .75rem; }
+#status { min-height: 1.4rem; color: #0b5f36; }
+@media (max-width: 750px) { .layout { grid-template-columns: 1fr; } }
