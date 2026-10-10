@@ -7,7 +7,8 @@
     "start": "tsc && cds deploy --to sqlite:db.sqlite && cds-serve",
     "watch": "tsc && cds watch --in-memory",
     "build": "tsc && cds build --production",
-    "test": "tsc --noEmit && npm run build"
+    "lint": "tsc --noEmit",
+    "test": "tsc && node --test test/*.test.js && npm run build"
   },
   "dependencies": {
     "@cap-js/sqlite": "^3.1.1",
